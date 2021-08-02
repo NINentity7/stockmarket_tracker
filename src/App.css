@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap');
+
+/*font-family: 'Nunito Sans', sans-serif;*/
+
+/*variables*/
+:root {
+  --green: #79c300;
+  --red: #d64b45;
+  --blue: #0047bb;
+  --orange: #f06400;
+  --white: #ffffff;
+  --light-grey: #f5f8fa;
+  --dark-grey: #657786;
+  --black: #14171a;
+  --my-shadow: 0 4px 12px #dedee7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+.App {
+  margin: 2% 0 2%;
+  display: flex;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home img:hover {
+  cursor: pointer;
+}
+
+.monetus-logo {
+  width: 46px;
+  height: 46px;
+  margin: 3vh auto;
+}
+
+.dashboard {
+  background-color: var(--light-grey);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  width: 788px;
+  height: auto;
+}
+
+.dashboard-top {
+  display: flex;
+  margin: 32px 0 32px 22.5px;
+}
+
+.dashboard-icon {
+  margin-right: 11px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  width: 364px;
+  height: 40px;
+  margin: 32px 0 24px 20px;
+  border-radius: 8px;
+  border: solid 1px #e1e0e7;
+  overflow: hidden;
+}
+
+.dashboard input {
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  flex-grow: 2;
+  padding: 8px;
+}
+
+.dashboard button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border: none;
+}
+
+.dashboard button:hover {
+  cursor: pointer;
+}
+
+.graph {
+  width: 748px;
+  height: 500px;
+  margin: 0 20px 42px 20px;
+  border-radius: 8px;
+  padding-top: 25px;
+  background-color: var(--white);
+  box-shadow: var(--my-shadow);
+}
+
+.graph h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.graph-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px 25px;
+}
+
+.graph-title .company {
+  margin-left: 20px;
+}
+
+.graph-title .star:hover {
+  cursor: pointer;
+}
+
+.dashboard-recent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 17px 20px;
+}
+
+.recent-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.recent-left img {
+  margin-right: 11px;
+}
+
+.recent-right {
+  margin-right: 20px;
+}
+
+.recent-right img {
+  margin-left: 24px;
+}
+
+.recent-right img:hover {
+  cursor: pointer;
+}
+
+.user-favorites {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 354px;
+  height: 40px;
+  padding: 4px;
+  margin: 32px 0;
+  border: solid #0047bb 1px;
+  border-radius: 32px;
+}
+
+.user-profile p {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.user-profile:hover {
+  cursor: pointer;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.favorites img {
+  margin-right: 12px;
+}
+
+.card {
+  width: 354px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .trash {
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.cards {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recent-cards,
+.fav-cards {
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.fav-star:hover {
+  cursor: pointer;
+}
+
+.recent-cards {
+  width: 299px;
+  height: 73px;
+  margin: 0 21px 21px 0;
+}
+
+.recent-cards:hover {
+  box-shadow: var(--my-shadow);
+}
+
+.fav-cards {
+  box-shadow: var(--my-shadow);
+  width: 335px;
+  height: 70px;
+  margin: 0 21px 21px 20px;
+}
+
+.logos {
+  display: flex;
+  margin-left: 20px;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-logo {
+  margin: 0 15px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.percent {
+  display: flex;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.percent h1 {
+  font-size: 18px;
+  display: flex;
+}
+
+.latest-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-graph {
+  width: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  .App {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home .home-img {
+    display: none;
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+}
